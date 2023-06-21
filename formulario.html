@@ -47,7 +47,7 @@
       }
   
       li a:hover {
-        background-color: #e69cd8;
+        background-color: #3bcf59;
       }
   
       /* Estilos CSS para el botón de menú desplegable */
@@ -68,7 +68,7 @@
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #9b19e5;
+        background-color: #19e520;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgb(242, 242, 242);
         z-index: 1;
@@ -101,8 +101,8 @@
             var asunto = $('#asunto').val();
             
             // Verifica si el campo de nombre cumple con las reglas
-            if (nombre.length < 10) {
-              $('#errorNombre').fadeIn().text('El nombre debe tener al menos 10 caracteres');
+            if (nombre.length < 3) {
+              $('#errorNombre').fadeIn().text('El nombre debe tener al menos 3 caracteres');
               return;
             } else {
                 $('#errorNombre').fadeOut();
@@ -110,7 +110,7 @@
             
             // Verifica si el campo de empresa cumple con las reglas
             if (empresa.length < 10) {
-              $('#errorEmpresa').fadeIn().text('La empresa debe tener al menos 10 caracteres');
+              $('#errorEmpresa').fadeIn().text('Los apellidos deben tener al menos 10 caracteres');
               return;
             } else {
                 $('#errorEmpresa').fadeOut();
@@ -125,8 +125,8 @@
             }
             
             // Verifica si el campo de asunto cumple con las reglas
-            if (asunto.length < 30) {
-              $('#errorAsunto').fadeIn().text('El asunto debe tener al menos 30 caracteres');
+            if (asunto.length < 6) {
+              $('#errorAsunto').fadeIn().text('El nombre de usuario debe tener mínimo 6 caracteres');
               return;
             } else{
                 $('#errorAsunto').fadeOut();
@@ -144,7 +144,7 @@
   <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">SuperSupermarket</a>
+        <a class="navbar-brand" href="#">La Salvada Express</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -154,16 +154,16 @@
               <a class="nav-link active" aria-current="page" href="index.html">¡Navega por nuestra tienda!</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="quienes.html">¿Quienes somos y donde encontrarnos?</a>
+              <a class="nav-link active" href="quienes.html">¿Quienes somos ?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="soporte.html">¿Problemas con el sitio? ¡Mira las preguntas frecuentes!</a>
+              <a class="nav-link active" href="guia.html">¿Nesesitas ayuda con el carrito? Consulta la guía</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="formulario.html">Contactanos</a>
+              <a class="nav-link active" href="formulario.html">Registrate como usuario aquí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="carrito.html">¡Compra ya!(Carrito de compras)</a>
+              <a class="nav-link active" href="nulman.html">¿Estas aburrido? ¡habla con Nulman!</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -180,7 +180,7 @@
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="nombre" aria-label="nombre" aria-describedby="basic-addon2" id="nombre"  required>
-            <label for="nombre" class="text-dark">Nombres</label>
+            <label for="nombre" class="text-dark">Nombre/s</label>
             <div class="invalid-feedback" id="errorNombre">
               El nombre tiene que tener mas de 3 caracteres.
             </div>
@@ -189,9 +189,9 @@
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="Nombre Empresa" aria-label="empresa" aria-describedby="basic-addon2" id="empresa">
-            <label for="empresa" class="text-dark">Apellidos</label>
+            <label for="empresa" class="text-dark">Apellido paterno y materno</label>
             <div class="invalid-feedback" id="errorEmpresa">
-              Los apellidos deben tener al menos 10 caracteres.
+              Ambos apellidos deben tener al menos 10 caracteres.
             </div>
           </div>
         </div>
@@ -213,9 +213,9 @@
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="Asunto" aria-label="asunto" aria-describedby="basic-addon2" id="asunto">
-            <label for="asunto" class="text-dark">Asunto</label>
+            <label for="asunto" class="text-dark">Nombre de usuario.</label>
               <div class="invalid-feedback" id="errorAsunto">
-                El asunto debe tener al menos 30 caracteres.
+                El nombre de usuario debe tener 6 caracteres como mínimo.
               </div>
           </div>
         </div>
@@ -224,6 +224,7 @@
         </div>
       </form>
     </div>
+    <a href="Index.html">Volver a la pagína principal</a>
     <!--
     <div id="container">
         <form id="myForm">
