@@ -125,7 +125,7 @@
             }
             
             // Verifica si el campo de asunto cumple con las reglas
-            if (asunto.length < 30) {
+            if (asunto.length < 8) {
               $('#errorAsunto').fadeIn().text('El asunto debe tener al menos 30 caracteres');
               return;
             } else{
@@ -175,12 +175,14 @@
     </nav>
   </nav>
   <br>
+  <h1>Para acceder al carrito debes registrarte o iniciar sesión</h1>
+  <br>
     <div class="row mx-auto">
       <form id="myForm" class="needs-validation" novalidate>
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="nombre" aria-label="nombre" aria-describedby="basic-addon2" id="nombre"  required>
-            <label for="nombre" class="text-dark">Nombres</label>
+            <label for="nombre" class="text-dark">Nombre de usuario</label>
             <div class="invalid-feedback" id="errorNombre">
               El nombre tiene que tener mas de 3 caracteres.
             </div>
@@ -189,7 +191,7 @@
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="Nombre Empresa" aria-label="empresa" aria-describedby="basic-addon2" id="empresa">
-            <label for="empresa" class="text-dark">Apellidos</label>
+            <label for="empresa" class="text-dark">Nombre completo y apellidos</label>
             <div class="invalid-feedback" id="errorEmpresa">
               Los apellidos deben tener al menos 10 caracteres.
             </div>
@@ -207,21 +209,24 @@
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="Celular" aria-label="celular" aria-describedby="basic-addon2" id="celular">
-            <label for="celular" class="text-dark">Telefono de contacto</label>
+            <label for="celular" class="text-dark">Numero de telefono</label>
           </div>  
         </div>
         <div class="col mb-5">
           <div class="form-floating mx-5">
             <input type="text" class="form-control" placeholder="Asunto" aria-label="asunto" aria-describedby="basic-addon2" id="asunto">
-            <label for="asunto" class="text-dark">Asunto</label>
+            <label for="asunto" class="text-dark">Contraseña</label>
               <div class="invalid-feedback" id="errorAsunto">
-                El asunto debe tener al menos 30 caracteres.
+                La Contraseña debe tener al menos 8 caracteres.
               </div>
           </div>
         </div>
         <div class="position-relative">
-          <button type="submit" class="btn btn-primary mx-auto position-absolute top-50 start-50 translate-middle" value="Enviar">Enviar</button>
+          <button type="submit" class="btn btn-primary mx-auto position-absolute top-50 start-50 translate-middle" value="Enviar">Registrar</button>
         </div>
+        <div class="position-relative">
+            <button type="submit" class="btn btn-primary mx-auto position-absolute top-50 start-50 translate-middle" value="Enviar">Iniciar Sesión</button>
+          </div>
       </form>
     </div>
     <!--
