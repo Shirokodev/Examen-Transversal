@@ -205,4 +205,11 @@
     display: flex;
     overflow: none;
 }
-
+.rectangulo {
+    background-color: rgba(204, 202, 202, 0.719);
+    width: auto;
+    height: 200px;
+  }
+.extra {
+    padding: 40px 0 0 100px;
+}

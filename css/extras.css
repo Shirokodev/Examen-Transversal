@@ -1,0 +1,10 @@
+.rectangulo {
+    background-color: rgba(204, 202, 202, 0.719);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+  }
+.extra {
+    padding: 40px 0 0 100px;
+}
