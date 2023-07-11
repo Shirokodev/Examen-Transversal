@@ -11,5 +11,5 @@ function adjustRectanglePosition() {
   }
   
   window.addEventListener('resize', adjustRectanglePosition);
-  adjustRectanglePosition(); // Asegurarse de que se ajuste correctamente al cargar la página
+  adjustRectanglePosition(); 
   

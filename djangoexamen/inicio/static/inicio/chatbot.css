@@ -1,6 +1,7 @@
 #chat-container {
-    overflow-y: scroll;
-    margin-bottom: 200px;
+    height: 450px; 
+    resize: vertical; 
+    overflow-y: auto; 
 }
 .chat-message {
     margin: 10px;
@@ -9,3 +10,4 @@
     margin-top: 20px;
     text-align: center;
 }
+
