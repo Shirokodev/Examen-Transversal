@@ -3,8 +3,9 @@
 }
 .container {
     text-align: center;
+    margin: 100px;
 }
 
-.primero {
-    padding-top: 40px;
+.container:first-of-type {
+    padding-top: 50px;
 }

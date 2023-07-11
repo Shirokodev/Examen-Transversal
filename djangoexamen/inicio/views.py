@@ -7,3 +7,15 @@ def home(request):
 
 def about(request):
     return render(request, 'inicio/quienes.html')
+
+def form(request):
+    return render(request, 'inicio/formulario.html')
+
+def guia(request):
+    return render(request, 'inicio/guia.html')
+
+def login(request):
+    return render(request, 'inicio/InicioSesion.html')
+
+def chatbot(request):
+    return render(request, 'inicio/nulman.html')
