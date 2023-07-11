@@ -1,0 +1,26 @@
+{% extends 'inicio/base.html' %}
+
+{% block inicio %}
+
+    <title>Registro</title>
+{% endblock inicio %}
+{% block content %}
+{% if form.errors %}
+<div class="container-alert">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Hubo un error en el formulario
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>    
+</div> 
+{% endif %}
+<div class="shadow p-4 mx-5 mb-5 mt-4 bg-body rounded">
+    <form action="{% url 'registracion' %}" method="POST">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
+

@@ -1,23 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    font-family: 'Open Sans';
-}
-@media screen and (max-width: 850px) {
-  .contenedor {
-    display: block;
-  }
-  .contenedor-items{
-      width: 100% !important;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.rectangulo {
-  background-color: rgba(204, 202, 202, 0.719);
-  width: auto;
+.container {
+  flex-grow: 1;
+}
+
+#fixed-rectangle {
+  background-color: #f0f0f0;
   height: 200px;
+  position: sticky;
+  bottom: 0;
+}
+
+.container-alert {
+    margin: 50px;
 }
 .extra {
   padding: 40px 0 0 100px;
+}
+
+.container-alert {
+    margin: 50px;
 }

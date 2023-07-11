@@ -1,11 +1,11 @@
-.container h1 {
+.container-guia h1 {
     padding: 20px 0 20px 0;
 }
-.container {
+.container-guia {
     text-align: center;
-    margin: 100px;
+    margin: 0px;
 }
 
-.container:first-of-type {
+.container-guia:first-of-type {
     padding-top: 50px;
 }
